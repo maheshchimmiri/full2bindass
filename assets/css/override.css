@@ -1,0 +1,497 @@
+   /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+    color: #444;
+      /* fallback */
+    background-color: #fdfdfd;
+  
+font-family:  "PT Sans","verdana", Arial, sans-serif;
+    }
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "PT Sans", verdana,arial;
+  color: #000;
+}
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: 10px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      color: rgb(0, 149, 233);
+      padding: 14px 20px 16px;
+      font-size: 5em;
+      text-shadow: 1px 2px 1px #eee;
+      font-family: amaranth;
+
+
+
+    }
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 2000px) { 
+
+.navbar-inverse .navbar-inner{
+  background-image:none;
+  background-color: transparent;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+}
+ }
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    .icon-6{
+      color: rgb(8, 87, 112);
+      font-size: 30em;
+      -webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+
+
+    }
+    .featurette:hover .icon-6{
+
+color: rgb(23, 151, 223);
+
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+transition-duration: 1s, 1s;
+transition-delay: 0s, .1s;
+text-shadow:20px 10px 0px rgb(8, 87, 112);
+
+}
+
+.featurette img {
+
+-webkit-transition: all 5s ease-in-out;
+-moz-transition: all 5s ease-in-out;
+-o-transition: all 5s ease-in-out;
+transition: all 5s ease-in-out;
+transition-duration: 2s, 3s;
+transition-delay: 0s, .3s;
+}
+
+.featurette:hover img { 
+-webkit-transform: rotate(3600deg); 
+-moz-transform: rotate(3600deg); 
+-o-transform: rotate(3600deg);
+-ms-transform: rotate(3600deg); 
+}
+.super-mo{
+
+height: 140px;
+width: 140px;
+font-size: 6em;
+background-color: red;
+border-radius: 500px;
+color: white;
+text-align: center;
+margin: auto;
+display: inline-block;
+}
+
+.super-mo div{
+  margin-top: 25px;
+}
+p{
+  
+
+}
+.page-header,.page-footer {
+  border-top: 1px solid rgb(241, 241, 241);
+  padding-bottom: 0px;
+  margin: 0px 0 10px;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #eee;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+  background: -webkit-linear-gradient(top, #fff, #eee);
+}
+.page-header h1{
+  font-size: 18px;
+}
+.page-footer{
+  height: 40px;
+  line-height: 40px;
+}
+
+.container{
+  max-width: 960px;
+}
+
+.page-footer h2{
+  font-size: 16px;
+}
+
+.footer-content{
+  border-right: 1px solid #eee;
+  padding: 10px;
+}
+.carousel {
+margin-bottom: 0px;
+}
+#homeslider{
+    border-top: 1px solid rgb(241, 241, 241);
+  padding-bottom: 0px;
+  margin: 0px 0 10px;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #eee;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+  background: -webkit-linear-gradient(top, #fff, #eee);
+}
+
+.bs-docs-sidenav {
+  
+  margin: 0px 0 20px;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  
+}
+.bs-docs-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.bs-docs-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.bs-docs-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  
+}
+/* Chevrons */
+.bs-docs-sidenav .icon-chevron-right {
+float: left;
+margin-top: 2px;
+margin-right: 18px;
+opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,
+.bs-docs-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+.bs-docs-sidenav.affix {
+  top: 40px;
+}
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+
+.carousel .item {
+height: 320px;
+}
+
+.carousel-caption {
+
+margin-top: 85px;
+}
+
+.carousel-control {
+
+opacity: 0.0;
+filter: alpha(opacity=0);
+}
+.social a {
+width: 24px;
+height: 24px;
+margin: 0px 3px;
+line-height: 24px;
+color: #fff;
+display: inline-block;
+text-align: center;
+}
+.bblue,.borange,.blightblue,.bviolet,.bred,.borange{
+color: #fff !important;
+border: 0px !important;
+}
+.bblue {
+background: #1171a3 !important;
+
+}
+.borange {
+background: #f88529 !important;
+}
+.blightblue {
+background: #52b9e9 !important;
+
+}
+.bviolet {
+background: #932ab6 !important;
+}
+.bred {
+background: #fa3031 !important;
+}
+.borange {
+background: #f88529 !important;
+}
+figure{
+  margin: 0;
+  padding: 0;
+}
+#the_real_content{
+  min-height: 600px;
+}
+.text{
+  padding-top: 10px;
+}
+.text li {
+  padding-left: 1.2em;
+  list-style: none;
+}
+
+.text li:before {
+  content: "\F141 "; /*fontawesome char code*/;
+  font-family: FontAwesome; /* or whatever */
+  display: inline-block;
+  margin-left: -1.2em; /*same as padding-left set on li*/
+  width: 1.2em; /*same as padding-left set on li*/
+
+}
+.nav-tabs > li, .nav-pills > li { float: left; font-size: 15px; font-weight: bold; }
+p{
+text-align:justify
+}
