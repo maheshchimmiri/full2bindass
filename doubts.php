@@ -1,0 +1,12 @@
+width="device-width"
+minimum-scale=1.0
+maximum-scale=1.0
+user-scalability=1.0/yes/no
+<META NAME="ROBOTS" CONTENT="ALL"> 
+
+<META NAME="ROBOTS" CONTENT="INDEX,NOFOLLOW"> 
+
+<META NAME="ROBOTS" CONTENT="NOINDEX,FOLLOW"> 
+
+<META NAME="ROBOTS" CONTENT="NONE">
+	<META NAME="GOOGLEBOT" CONTENT="NOARCHIVE">
