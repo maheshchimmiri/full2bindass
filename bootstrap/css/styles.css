@@ -2,5 +2,8 @@
 	max-width: 960px;
 }
 .span10{
-padding-top: 30px;
+padding-top: 50px;
+}
+#homeslider{
+	margin-left: 30px;
 }

@@ -2,6 +2,7 @@ width="device-width"
 minimum-scale=1.0
 maximum-scale=1.0
 user-scalability=1.0/yes/no
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2014 11:12:01 GMT+5:30">
 <META NAME="ROBOTS" CONTENT="ALL"> 
 
 <META NAME="ROBOTS" CONTENT="INDEX,NOFOLLOW"> 

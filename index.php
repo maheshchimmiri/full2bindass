@@ -35,10 +35,11 @@
     <script src="js/bootstrap-typeahead.js"></script>
 	</head>
 	<!---HEADER-->
-<body>
+
 	<div class="container" style="height: 90px;">
-    <div class="row-fluid" style="padding-top: 10px;padding-left:30px;">
-      <div class="span2">
+    <div class="row-fluid" style="padding-top: 10px;padding-left:15px;">
+      <div class="span12">
+      	<div class="span2">
 <h1><a href="index.php"><img src="http://cdn7.staztic.com/app/i/1949/1949396/f2b-barcode-reader-102-l-78x78.png"></a>
 </h1>
       </div>
@@ -47,7 +48,41 @@
       </div>
     </div>
    </div> 
+</div>
 <!---HEADER-->
+<!--*************slider*****************-->
+<body>
+<div id="homeslider">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+				<div id="myCarousel" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="item">
+							<img src="assets/images/2.jpg" alt="">
+							<div class="container">
+								
+							</div>
+						</div>
+						<div class="item active">
+							<img src="assets/images/5.jpg" alt="">
+							<div class="container">
+							
+							</div>
+						</div>
+						<div class="item">
+							<img src="assets/images/6.jpg" alt="">
+							<div class="container">
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
